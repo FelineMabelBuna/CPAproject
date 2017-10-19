@@ -13,7 +13,8 @@ import sys
 path ='/home/FelineBuna/web'
 if path not in sys.path:
     sys.path.append(path)
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "web.settings")
+
 from django.core.wsgi import get_wsgi_application
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "web.settings")
 from django.contrib.staticfiles.handlers import StaticFilesHandler
 application = StaticFilesHandler(get_wsgi_application())
