@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>{% block title %}CPA Class Student Names List{% endblock %}</title>
+    {% load staticfiles %}
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'crud/css/bootstrap.css' %}"/>
+    </head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://learn.adamson.edu.ph/V4/">Adamson University E-Learning</a>
+
+
+        </div>
+    </nav>
+    <div class="col-md-3"></div>
+    <div class="col-md-6 well">
+        <h3 class="text-primary" align="center">CPA Class Student Names List </h3>
+        <h3 class="text-primary" align="center">Section 25021 (LEC) 25022 (LAB) </h3>
+        <hr style="border-top:1px dotted #000;"/>
+        {% block body %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>
